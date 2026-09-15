@@ -9,8 +9,16 @@ import sys
 import tempfile
 import time
 
-# Load server.py directly by file path (bypasses sys.path caching)
-_SERVER_PATH = '/tmp/odoo-claw-check/odooclaw/cmd/odooclaw/internal/onboard/workspace/skills/rlm-kernel/server.py'
+# Load the canonical server.py inside the Go-embedded rlm-kernel directly by
+# file path (bypasses sys.path caching). Resolve it relative to this test file
+# so it works from any checkout, not just the machine that wrote the port.
+_SERVER_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    os.pardir, os.pardir, os.pardir, os.pardir,
+    "cmd", "odooclaw", "internal", "onboard", "workspace", "skills",
+    "rlm-kernel", "server.py",
+)
+_SERVER_PATH = os.path.abspath(_SERVER_PATH)
 
 def _load_server():
     """Always load a fresh copy of server so patched methods are used."""
