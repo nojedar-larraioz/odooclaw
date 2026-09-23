@@ -1,19 +1,19 @@
 <div align="center">
   <img src="odooclaw/assets/logo_openclaw.png" alt="OdooClaw" width="600">
 
-  <h1>OdooClaw 1.0 — Next Generation</h1>
+  <h1>OdooClaw 1.1 — RLM-Kernel MCP Server</h1>
 
   <h3>100% Local AI for Odoo · Own Trained Models · No Subscriptions · Data Sovereignty</h3>
 
   <p>
-    <img src="https://img.shields.io/badge/release-v1.0.0-brightgreen" alt="Release v1.0.0">
+    <img src="https://img.shields.io/badge/release-v1.1.0-brightgreen" alt="Release v1.1.0">
     <img src="https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go&logoColor=white" alt="Go">
     <img src="https://img.shields.io/badge/Odoo-16%20%7C%2017%20%7C%2018-F68B20?style=flat&logo=odoo&logoColor=white" alt="Odoo">
     <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
     <br>
     <a href="https://github.com/nicolasramos/odooclaw"><img src="https://img.shields.io/badge/GitHub-Repository-black?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
     <a href="https://huggingface.co/nicolasramos"><img src="https://img.shields.io/badge/HuggingFace-Models-FFD21E?style=flat&logo=huggingface&logoColor=black" alt="HuggingFace Models"></a>
-    <a href="https://github.com/nicolasramos/odooclaw/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Release-Notes-blue?style=flat" alt="Release Notes"></a>
+    <a href="https://github.com/nicolasramos/odooclaw/releases/tag/v1.1.0"><img src="https://img.shields.io/badge/Release-Notes-blue?style=flat" alt="Release Notes"></a>
   </p>
 
 </div>
@@ -22,7 +22,7 @@
 
 ## 🚀 Next Generation: your own AI, on your own hardware
 
-**OdooClaw 1.0 ships with its own trained models — and remains fully model-agnostic.**
+**OdooClaw 1.1 ships with its own trained models — and remains fully model-agnostic.**
 
 You can run OdooClaw with:
 - **Our models** (OdooClaw Light 1.2B + Vision, published on HuggingFace) — 100% local, open source (MIT), free forever
@@ -46,10 +46,10 @@ You can run OdooClaw with:
 
 ```bash
 # Linux (llama.cpp + n-gram speculative decoding, +49% tok/s)
-curl -sL https://raw.githubusercontent.com/nicolasramos/odooclaw/v1.0.0/odooclaw/scripts/setup-local.sh | bash
+curl -sL https://raw.githubusercontent.com/nicolasramos/odooclaw/v1.1.0/odooclaw/scripts/setup-local.sh | bash
 
 # Apple Silicon (oMLX/MLX, never llama.cpp on Mac)
-curl -sL https://raw.githubusercontent.com/nicolasramos/odooclaw/v1.0.0/odooclaw/scripts/setup-local.sh | bash
+curl -sL https://raw.githubusercontent.com/nicolasramos/odooclaw/v1.1.0/odooclaw/scripts/setup-local.sh | bash
 ```
 
 The installer builds the runtime, downloads the models from HuggingFace and writes the
